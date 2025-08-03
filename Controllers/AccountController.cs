@@ -56,7 +56,11 @@ namespace Task4.Controllers
         [AllowAnonymous]
         public IActionResult Register()
         {
-            return View();
+             if (User.Identity.IsAuthenticated)
+            {
+                return RedirectToAction("Index", "Users");
+            }
+            return View(); 
         }
 
         [HttpPost]
@@ -75,7 +79,6 @@ namespace Task4.Controllers
 
                 if (result.Succeeded)
                 {
-                    await _signInManager.SignInAsync(user, isPersistent: false);
                     return RedirectToAction("Login", "Account");
                 }
 
