@@ -4,10 +4,12 @@ EXPOSE 80
 
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 WORKDIR /src
-COPY ["*.csproj", "Task4/"]
-RUN dotnet restore "Task4.csproj"
+
+COPY Task4.csproj ./
+RUN dotnet restore "./Task4.csproj"
+
 COPY . .
-WORKDIR "/src/Task4"
+
 RUN dotnet build "Task4.csproj" -c Release -o /app/build
 
 FROM build AS publish
