@@ -76,7 +76,7 @@ namespace Task4.Controllers
                 if (result.Succeeded)
                 {
                     await _signInManager.SignInAsync(user, isPersistent: false);
-                    return RedirectToAction("Index", "Users");
+                    return RedirectToAction("Login", "Account");
                 }
 
                 foreach (var error in result.Errors)
