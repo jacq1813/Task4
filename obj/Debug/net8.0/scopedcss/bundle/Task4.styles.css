@@ -1,0 +1,111 @@
+/* _content/Task4/Views/Shared/_Layout.cshtml.rz.scp.css */
+
+/* Navbar mejorada */
+.navbar[b-4kqpqep96i] {
+  box-shadow: 0 2px 4px rgba(0,0,0,.1);
+  padding: 0.5rem 0;
+}
+
+.navbar-brand[b-4kqpqep96i] {
+  font-weight: 600;
+  font-size: 1.25rem;
+  color: #2c3e50 !important;
+}
+/* Tabla de usuarios mejorada */
+.table[b-4kqpqep96i] {
+  margin-top: 1.5rem;
+  box-shadow: 0 0.15rem 0.5rem rgba(0,0,0,.05);
+}
+
+.table thead th[b-4kqpqep96i] {
+  background-color: #2c3e50;
+  color: white;
+  border-bottom: none;
+  padding: 12px 15px;
+}
+
+.table tbody tr[b-4kqpqep96i] {
+  transition: all 0.2s ease;
+}
+
+.table tbody tr:hover[b-4kqpqep96i] {
+  background-color: #f1f5f9;
+}
+
+/* Botones de acción */
+.btn[b-4kqpqep96i] {
+  font-weight: 500;
+  padding: 0.375rem 0.75rem;
+  margin-right: 0.5rem;
+  transition: all 0.2s;
+}
+
+.btn-danger[b-4kqpqep96i] {
+  background-color: #e74c3c;
+  border-color: #e74c3c;
+}
+
+.btn-success[b-4kqpqep96i] {
+  background-color: #2ecc71;
+  border-color: #2ecc71;
+}
+
+.btn-warning[b-4kqpqep96i] {
+  background-color: #f39c12;
+  border-color: #f39c12;
+}
+
+.footer a[b-4kqpqep96i] {
+  color: #3498db;
+}
+
+/* Checkboxes */
+.user-checkbox[b-4kqpqep96i] {
+  transform: scale(1.2);
+  margin: 0;
+  cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .container[b-4kqpqep96i] {
+      padding: 1rem;
+  }
+  
+  .table-responsive[b-4kqpqep96i] {
+      display: block;
+      width: 100%;
+      overflow-x: auto;
+  }
+}
+
+/* Estructura principal del layout */
+body[b-4kqpqep96i] {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+
+/* Contenedor principal que crece */
+.container[b-4kqpqep96i] {
+  flex: 1;
+  padding-bottom: 60px; /* Espacio para el footer */
+}
+
+/* Footer fijo en la parte inferior */
+.footer[b-4kqpqep96i] {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 50px; /* Altura del footer */
+  line-height: 50px; /* Centrado vertical */
+  background-color: #faf9f8;
+  border-top: 1px solid #a40909;
+  text-align: center;
+}
+
+/* Ajuste para contenido en la vista de usuarios */
+.table-container[b-4kqpqep96i] {
+  margin-bottom: 70px; /* Mayor que la altura del footer */
+}
