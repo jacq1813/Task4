@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/edithriostorres/Desktop/Inter/Task4/Task4.csproj": {}
+    "/Users/edithriostorres/Desktop/REPOSITORISO/Task4/Task4.csproj": {}
   },
   "projects": {
-    "/Users/edithriostorres/Desktop/Inter/Task4/Task4.csproj": {
+    "/Users/edithriostorres/Desktop/REPOSITORISO/Task4/Task4.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/edithriostorres/Desktop/Inter/Task4/Task4.csproj",
+        "projectUniqueName": "/Users/edithriostorres/Desktop/REPOSITORISO/Task4/Task4.csproj",
         "projectName": "Task4",
-        "projectPath": "/Users/edithriostorres/Desktop/Inter/Task4/Task4.csproj",
+        "projectPath": "/Users/edithriostorres/Desktop/REPOSITORISO/Task4/Task4.csproj",
         "packagesPath": "/Users/edithriostorres/.nuget/packages/",
-        "outputPath": "/Users/edithriostorres/Desktop/Inter/Task4/obj/",
+        "outputPath": "/Users/edithriostorres/Desktop/REPOSITORISO/Task4/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/edithriostorres/.nuget/NuGet/NuGet.Config"

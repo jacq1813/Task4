@@ -12,8 +12,8 @@ using Task4.Data;
 namespace Task4.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20250801222014_UpdateUserModel")]
-    partial class UpdateUserModel
+    [Migration("20250803223949_InitialCreate")]
+    partial class InitialCreate
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
