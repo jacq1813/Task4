@@ -68,6 +68,7 @@ namespace Task4.Controllers
         {
             if (ModelState.IsValid)
             {
+                try{
                 var user = new User
                 {
                     UserName = model.Email,
@@ -81,11 +82,26 @@ namespace Task4.Controllers
                 {
                     return RedirectToAction("Login", "Account");
                 }
-
-                foreach (var error in result.Errors)
+                 foreach (var error in result.Errors)
                 {
                     ModelState.AddModelError(string.Empty, error.Description);
                 }
+                }
+                catch (Exception ex)
+                {
+
+                    if(ex.InnerException?.Message.Contains("duplicate key") == true || 
+                       ex.InnerException?.Message.Contains("UNIQUE constraint failed") == true
+                       || ex.InnerException?.Message.Contains("Violation of UNIQUE KEY constraint") == true)
+
+                    {
+                        ModelState.AddModelError(string.Empty, "Email already exists. Please use a different email.");
+                    }else{
+
+                    ModelState.AddModelError(string.Empty, "An error occurred while registering the user: " + ex.Message);
+                    }
+                }
+               
             }
             return View(model);
         }
